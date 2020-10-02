@@ -266,10 +266,12 @@ is_target()
   If is_target()
     Send %A_ThisHotkey%
   Else
+  {
     Send {ShiftDown}{END}{SHIFTUP}
     Sleep 50
     Send {Del}
     ;Send ^x
+  }
   Return
 
 ;
